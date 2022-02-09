@@ -19,7 +19,7 @@ const About = () => {
 
       <div className="about__contact center">
         {resume && (
-          <a href={resume}>
+          <a href={resume} target="_blank">
             <span type="button" className="btn btn--outline">
               Resume
             </span>
@@ -29,13 +29,23 @@ const About = () => {
         {social && (
           <>
             {social.github && (
-              <a href={social.github} aria-label="github" className="link link--icon">
+              <a
+                href={social.github}
+                aria-label="github"
+                className="link link--icon"
+                target="_blank"
+              >
                 <GitHubIcon />
               </a>
             )}
 
             {social.linkedin && (
-              <a href={social.linkedin} aria-label="linkedin" className="link link--icon">
+              <a
+                href={social.linkedin}
+                aria-label="linkedin"
+                className="link link--icon"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </a>
             )}
