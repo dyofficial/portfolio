@@ -9,7 +9,7 @@ const about = {
   name: 'DANIEL YEBOAH',
   role: 'Front End Engineer',
   description:
-    'Creative React Developer with over a years experience designing useful, approachable user interfaces. Knowledgeable on all aspects of Facebooks design best practices and emerging UI development techniques. Skilled at connecting exceptional assets with users via creative UI frameworks and careful user experience optimization.',
+    'Creative React Developer with experience designing useful, approachable user interfaces. Knowledgeable on all aspects of Facebooks design best practices and emerging UI development techniques. Skilled at connecting exceptional assets with users via creative UI frameworks and careful user experience optimization.',
   resume: 'https://drive.google.com/file/d/1nZz8INQqfP7VhfbgnOmWjqnE-UyKt6iZ/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/daniel-yeboah-b92447110/',
@@ -54,6 +54,7 @@ const skills = [
   'React',
   'Redux',
   'SASS',
+  'Tailwind CSS',
   'Material UI',
   'Git',
   'Jest',
