@@ -1,5 +1,6 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { ThemeContext } from './contexts/theme';
+import ReactGA from 'react-ga';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -11,6 +12,14 @@ import './App.css';
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
+
+  useEffect(() => {
+    ReactGA.initialize('G-4JKZ67YW3M');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+  ReactGA.initialize('G-4JKZ67YW3M');
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <div id="top" className={`${themeName} app`}>

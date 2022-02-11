@@ -1,5 +1,6 @@
 import { header } from '../../portfolio';
 import Navbar from '../Navbar/Navbar';
+import SearchBar from '../Search/SearchBar';
 import './Header.css';
 
 const Header = () => {
@@ -16,6 +17,7 @@ const Header = () => {
           title
         )}
       </h3>
+      <SearchBar />
       <Navbar />
     </header>
   );
