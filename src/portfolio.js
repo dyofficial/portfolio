@@ -64,6 +64,7 @@ const skills = [
 const contact = {
   // email is optional - if left empty Contact section won't show up
   email: 'danielkofi4@gmail.com',
+  whatsapp: 'https://wa.me/2332759801',
 };
 
 export { header, about, projects, skills, contact };

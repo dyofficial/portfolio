@@ -7,5 +7,15 @@ export const resumeAnalyticsHandler = () => {
     category: 'Resume',
     action: 'Resume has been clicked',
   });
-  console.log('first');
+};
+
+export const whatsAppAnalyticsHandler = () => {
+  ReactGa.event({
+    category: 'WhatsApp',
+    action: 'WhatsApp has been clicked',
+  });
+};
+
+export const githubAnalyticsHandler = () => {
+  ReactGa.event({ category: 'Github', action: 'Github has been clicked' });
 };

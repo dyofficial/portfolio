@@ -2,8 +2,8 @@ import './Footer.css';
 
 const Footer = () => (
   <footer className="footer">
-    <a href="https://github.com/rajshekhar26/cleanfolio" className="link footer__link">
-      Created By DY
+    <a href="https://github.com/dyofficial" className="link footer__link" target="_blank">
+      Created By 🦸‍♂️ DY
     </a>
   </footer>
 );

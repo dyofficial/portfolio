@@ -1,7 +1,7 @@
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { about } from '../../portfolio';
-import { resumeAnalyticsHandler } from '../../helpers/helper';
+import { resumeAnalyticsHandler, githubAnalyticsHandler } from '../../helpers/helper';
 import './About.css';
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
       {role && <h2 className="about__role">A {role}.</h2>}
       <p className="about__desc">{description && description}</p>
 
-      <div className="about__contact center">
+      <div className="about__contact center" id="links">
         {resume && (
           <a href={resume} target="_blank" onClick={resumeAnalyticsHandler}>
             <span type="button" className="btn btn--outline">
@@ -35,6 +35,7 @@ const About = () => {
                 aria-label="github"
                 className="link link--icon"
                 target="_blank"
+                onClick={githubAnalyticsHandler}
               >
                 <GitHubIcon />
               </a>
